@@ -1,72 +1,73 @@
-# ![Hubbardston Seal](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Seal_of_Massachusetts.svg/1920px-Seal_of_Massachusetts.svg.png)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubbardston Budget</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding: 20px; background-color: #f4f4f4; }
+        h2 { color: #333; }
+        table { width: 80%; margin: 20px auto; border-collapse: collapse; background: white; box-shadow: 2px 2px 10px rgba(0,0,0,0.1); }
+        th, td { border: 1px solid #ddd; padding: 12px; text-align: left; }
+        th { background-color: #00467F; color: white; }
+        tr:hover { background-color: #f1f1f1; }
+        .increase { color: green; font-weight: bold; }
+        .decrease { color: red; font-weight: bold; }
+        canvas { max-width: 600px; margin: 20px auto; }
+    </style>
+</head>
+<body>
 
-# **Hubbardston Budget - General Government**
-*A transparent and structured financial overview for FY24–FY26*
+<h2>Hubbardston Budget - General Government</h2>
+<p>Interactive budget report with visuals.</p>
 
----
-
-## 📌 Quick Navigation  
-<table align="center">
-<tr>
-    <td align="center"><a href="#moderator-114"><img src="https://img.icons8.com/ios-filled/50/gavel.png" width="50"><br>Moderator</a></td>
-    <td align="center"><a href="#select-board-122"><img src="https://img.icons8.com/ios-filled/50/law.png" width="50"><br>Select Board</a></td>
-    <td align="center"><a href="#town-admin-129"><img src="https://img.icons8.com/ios-filled/50/admin-settings-male.png" width="50"><br>Town Admin</a></td>
-    <td align="center"><a href="#finance-committee-131"><img src="https://img.icons8.com/ios-filled/50/money.png" width="50"><br>Finance</a></td>
-</tr>
-<tr>
-    <td align="center"><a href="#accountant-135"><img src="https://img.icons8.com/ios-filled/50/calculator.png" width="50"><br>Accountant</a></td>
-    <td align="center"><a href="#assessor-141"><img src="https://img.icons8.com/ios-filled/50/home.png" width="50"><br>Assessor</a></td>
-    <td align="center"><a href="#treasurer-collector-149"><img src="https://img.icons8.com/ios-filled/50/bank.png" width="50"><br>Treasurer</a></td>
-    <td align="center"><a href="#information-technology-155"><img src="https://img.icons8.com/ios-filled/50/computer.png" width="50"><br>IT</a></td>
-</tr>
-<tr>
-    <td align="center"><a href="#town-clerk-161"><img src="https://img.icons8.com/ios-filled/50/documents.png" width="50"><br>Town Clerk</a></td>
-    <td align="center"><a href="#building-maintenance-192"><img src="https://img.icons8.com/ios-filled/50/maintenance.png" width="50"><br>Building</a></td>
-    <td align="center"><a href="#grand-total"><img src="https://img.icons8.com/ios-filled/50/sigma.png" width="50"><br>Grand Total</a></td>
-</tr>
+<!-- Budget Table -->
+<table>
+    <tr>
+        <th>Department</th>
+        <th>FY24</th>
+        <th>FY25</th>
+        <th>Change</th>
+    </tr>
+    <tr>
+        <td>Town Admin</td>
+        <td>$110,000</td>
+        <td>$115,566</td>
+        <td class="increase">$5,566</td>
+    </tr>
+    <tr>
+        <td>Finance</td>
+        <td>$90,000</td>
+        <td>$88,000</td>
+        <td class="decrease">-$2,000</td>
+    </tr>
 </table>
 
----
+<!-- Budget Chart -->
+<canvas id="budgetChart"></canvas>
 
-## 🏛 Moderator - 114 <a id="moderator-114"></a>
-| Category  | Description | FY24 Actual | FY25 Requested | FY25 Actual | FY26 Dept | FY26 Admin | Change ($) | Change (%) |
-|-----------|------------|-------------|---------------|-------------|-----------|------------|------------|------------|
-| **Personnel** | Stipend | $100 | $100 | $100 | $100 | $100 | $0 | 0.00% |
-| **Total** |  | **$100** | **$100** | **$100** | **$100** | **$100** | **$0** | **0.00%** |
+<script>
+    const ctx = document.getElementById('budgetChart').getContext('2d');
+    new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['Town Admin', 'Finance'],
+            datasets: [
+                {
+                    label: 'FY24',
+                    data: [110000, 90000],
+                    backgroundColor: 'blue'
+                },
+                {
+                    label: 'FY25',
+                    data: [115566, 88000],
+                    backgroundColor: 'green'
+                }
+            ]
+        }
+    });
+</script>
 
-[🔝 Back to Top](#-quick-navigation)
-
----
-
-## 📜 Select Board - 122 <a id="select-board-122"></a>
-| Category  | Description | FY24 Actual | FY25 Requested | FY25 Actual | FY26 Dept | FY26 Admin | Change ($) | Change (%) |
-|-----------|------------|-------------|---------------|-------------|-----------|------------|------------|------------|
-| **Personnel** | Executive Assistant | $28,111 | $28,673 | $28,673 | <span style="color:green">$36,870</span> | <span style="color:blue">$34,348</span> | <span style="color:red">$5,675</span> | <span style="color:orange">19.79%</span> |
-| **Employee Support** | Expenses | $800 | $800 | $800 | $800 | $800 | $0 | 0.00% |
-| **Services** | Advertising | $1,500 | $1,500 | $1,500 | $1,500 | <span style="color:red">$1,000</span> | <span style="color:red">-$500</span> | <span style="color:red">-33.33%</span> |
-| **Services** | Legal | $40,000 | $40,000 | $40,000 | $40,000 | $40,000 | $0 | 0.00% |
-| **Supplies** | Postage | $1,000 | $1,000 | $1,000 | $1,000 | <span style="color:green">$6,000</span> | <span style="color:green">$5,000</span> | <span style="color:green">500.00%</span> |
-| **Total** |  | **$77,161** | **$76,473** | **$76,473** | **$86,170** | **$86,648** | **$10,175** | **13.31%** |
-
-[🔝 Back to Top](#-quick-navigation)
-
----
-
-## 👨‍💼 Town Admin - 129 <a id="town-admin-129"></a>
-| Category  | Description | FY24 Actual | FY25 Requested | FY25 Actual | FY26 Dept | FY26 Admin | Change ($) | Change (%) |
-|-----------|------------|-------------|---------------|-------------|-----------|------------|------------|------------|
-| **Personnel** | Salary | $110,000 | $112,200 | $112,200 | <span style="color:green">$112,200</span> | <span style="color:blue">$115,566</span> | <span style="color:red">$3,366</span> | <span style="color:orange">3.00%</span> |
-| **Employee Support** | Cell Phone Stipend | $600 | $600 | $600 | $600 | $600 | $0 | 0.00% |
-| **Employee Support** | Expenses | $6,600 | $7,600 | $6,600 | $8,000 | $6,600 | $0 | 0.00% |
-| **Total** |  | **$121,253** | **$120,400** | **$119,400** | **$120,800** | **$122,766** | **$3,366** | **2.82%** |
-
-[🔝 Back to Top](#-quick-navigation)
-
----
-
-## 📈 Grand Total (General Government) <a id="grand-total"></a>
-| Category  | FY24 Actual | FY25 Requested | FY25 Actual | FY26 Dept | FY26 Admin | Change ($) | Change (%) |
-|-----------|-------------|---------------|-------------|-----------|------------|------------|------------|
-| **Total Budget** | **$669,598** | **$718,106** | **$688,408** | <span style="color:green">**$742,797**</span> | <span style="color:blue">**$731,340**</span> | <span style="color:red">**$42,932**</span> | <span style="color:orange">**6.24%**</span> |
-
-[🔝 Back to Top](#-quick-navigation)
+</body>
+</html>
