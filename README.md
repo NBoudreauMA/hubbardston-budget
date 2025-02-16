@@ -42,7 +42,11 @@
 | Category  | Description | FY24 Actual | FY25 Requested | FY25 Actual | FY26 Dept | FY26 Admin | Change ($) | Change (%) |
 |-----------|------------|-------------|---------------|-------------|-----------|------------|------------|------------|
 | **Personnel** | Executive Assistant | $28,111 | $28,673 | $28,673 | <span style="color:green">$36,870</span> | <span style="color:blue">$34,348</span> | <span style="color:red">$5,675</span> | <span style="color:orange">19.79%</span> |
-| **Total** |  | **$28,111** | **$28,673** | **$28,673** | **$36,870** | **$34,348** | **$5,675** | **19.79%** |
+| **Employee Support** | Expenses | $800 | $800 | $800 | $800 | $800 | $0 | 0.00% |
+| **Services** | Advertising | $1,500 | $1,500 | $1,500 | $1,500 | <span style="color:red">$1,000</span> | <span style="color:red">-$500</span> | <span style="color:red">-33.33%</span> |
+| **Services** | Legal | $40,000 | $40,000 | $40,000 | $40,000 | $40,000 | $0 | 0.00% |
+| **Supplies** | Postage | $1,000 | $1,000 | $1,000 | $1,000 | <span style="color:green">$6,000</span> | <span style="color:green">$5,000</span> | <span style="color:green">500.00%</span> |
+| **Total** |  | **$77,161** | **$76,473** | **$76,473** | **$86,170** | **$86,648** | **$10,175** | **13.31%** |
 
 [🔝 Back to Top](#-quick-navigation)
 
@@ -52,7 +56,9 @@
 | Category  | Description | FY24 Actual | FY25 Requested | FY25 Actual | FY26 Dept | FY26 Admin | Change ($) | Change (%) |
 |-----------|------------|-------------|---------------|-------------|-----------|------------|------------|------------|
 | **Personnel** | Salary | $110,000 | $112,200 | $112,200 | <span style="color:green">$112,200</span> | <span style="color:blue">$115,566</span> | <span style="color:red">$3,366</span> | <span style="color:orange">3.00%</span> |
-| **Total** |  | **$110,000** | **$112,200** | **$112,200** | **$112,200** | **$115,566** | **$3,366** | **3.00%** |
+| **Employee Support** | Cell Phone Stipend | $600 | $600 | $600 | $600 | $600 | $0 | 0.00% |
+| **Employee Support** | Expenses | $6,600 | $7,600 | $6,600 | $8,000 | $6,600 | $0 | 0.00% |
+| **Total** |  | **$121,253** | **$120,400** | **$119,400** | **$120,800** | **$122,766** | **$3,366** | **2.82%** |
 
 [🔝 Back to Top](#-quick-navigation)
 
