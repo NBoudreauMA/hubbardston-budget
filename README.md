@@ -1,169 +1,106 @@
+// Install dependencies before running
+// npm install react lucide-react
+
 import React, { useState } from 'react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+
 import { Menu } from 'lucide-react';
+
+// Card Component
+export const Card = ({ children }) => (
+  <div className="bg-white shadow-md rounded-lg p-4">{children}</div>
+);
+
+export const CardContent = ({ children }) => <div>{children}</div>;
+
+export const CardHeader = ({ children }) => (
+  <div className="border-b p-4 font-bold">{children}</div>
+);
+
+export const CardTitle = ({ children }) => <h2 className="text-lg">{children}</h2>;
 
 const BudgetProposal = () => {
   const [activeDept, setActiveDept] = useState('GENERAL GOVERNMENT');
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  // Full budget data
   const budgetData = {
     'GENERAL GOVERNMENT': [
-      { item: "Moderator", fy25: 100, fy26: 100, change: 0 },
-      { item: "Select Board", fy25: 76473, fy26: 86648, change: 13.31 },
-      { item: "Town Admin", fy25: 120400, fy26: 122766, change: 2.82 },
-      { item: "Finance Committee", fy25: 30200, fy26: 30200, change: 0 },
-      { item: "Accountant", fy25: 45470, fy26: 44249, change: 1.10 },
-      { item: "Assessor", fy25: 95275, fy26: 88775, change: 1.72 },
-      { item: "Treasurer Collector", fy25: 141098, fy26: 131071, change: 2.08 },
-      { item: "Information Technology", fy25: 86000, fy26: 91000, change: 8.33 },
-      { item: "Town Clerk", fy25: 75450, fy26: 74170, change: 4.54 },
-      { item: "Building & Maintenance", fy25: 47640, fy26: 62361, change: 30.35 }
-    ],
-    'PUBLIC SAFETY': [
-      { item: "Police", fy25: 737565, fy26: 709576, change: 1.73 },
-      { item: "Fire", fy25: 613243, fy26: 571748, change: -2.79 },
-      { item: "Land Use", fy25: 94214, fy26: 117398, change: -39.24 },
-      { item: "Emergency Management", fy25: 2489, fy26: 2483, change: 0 },
-      { item: "Animal Control", fy25: 18944, fy26: 20500, change: 0 },
-      { item: "Tree Warden", fy25: 1900, fy26: 1900, change: 0 },
-      { item: "Dispatch", fy25: 142410, fy26: 158238, change: 6.20 }
-    ],
-    'PUBLIC WORKS': [
-      { item: "DPW Director", fy25: 89269, fy26: 94402, change: 5.75 },
-      { item: "DPW Wages", fy25: 285975, fy26: 285975, change: 2.00 },
-      { item: "Snow and Ice", fy25: 237130, fy26: 233300, change: -0.90 },
-      { item: "Street Lights", fy25: 6000, fy26: 6000, change: 0 },
-      { item: "Cemetery", fy25: 1300, fy26: 1300, change: 0 }
-    ],
-    'SCHOOL': [
-      { item: "Quabbin Regional", fy25: 6343869, fy26: 6880292, change: 8.00 },
-      { item: "QRSD Debt", fy25: 56318, fy26: 57444, change: 2.00 },
-      { item: "Montachusett Technical", fy25: 357138, fy26: 357138, change: 0 }
-    ],
-    'HUMAN SERVICES': [
-      { item: "Senior Center", fy25: 22204, fy26: 25550, change: 18.27 },
-      { item: "Veterans", fy25: 16350, fy26: 9850, change: 0 }
-    ],
-    'CULTURE & RECREATION': [
-      { item: "Library", fy25: 89639, fy26: 91290, change: 1.95 },
-      { item: "Recreation", fy25: 2500, fy26: 2500, change: 0 },
-      { item: "Agricultural Commission", fy25: 300, fy26: 300, change: 0 },
-      { item: "Historical Commission", fy25: 200, fy26: 200, change: 0 }
-    ],
-    'DEBT': [
-      { item: "Short-Term Interest", fy25: 14485, fy26: 20000, change: 38.07 },
-      { item: "Principal on Short-Term Debt", fy25: 50000, fy26: 25000, change: -50.00 },
-      { item: "School Roof", fy25: 82377, fy26: 101862, change: 23.65 }
-    ],
-    'LIABILITIES & ASSESSMENTS': [
-      { item: "Cherry Sheet Assessment", fy25: 10151, fy26: 12280, change: 0 },
-      { item: "Worcester Regional Retirement", fy25: 431576, fy26: 480823, change: 7.33 },
-      { item: "Health Insurance", fy25: 219761, fy26: 241737, change: 10.00 },
-      { item: "Medicare", fy25: 33360, fy26: 33360, change: 0 },
-      { item: "Liability Insurance", fy25: 156175, fy26: 163984, change: 5.00 },
-      { item: "Offsets and Overlay", fy25: 68627, fy26: 72765, change: 0 }
+      { item: "Moderator", fy24: 100, fy25: 100, fy25Actual: 100, fy26Dept: 100, fy26Admin: 100, change: 0, changePct: "0.00%" },
+      { item: "Select Board", fy24: 77161, fy25: 76473, fy25Actual: 76473, fy26Dept: 86170, fy26Admin: 86648, change: 10175, changePct: "13.31%" },
+      { item: "Town Admin", fy24: 121253, fy25: 120400, fy25Actual: 119400, fy26Dept: 120800, fy26Admin: 122766, change: 3366, changePct: "2.82%" },
+      { item: "Finance Committee", fy24: 30200, fy25: 30200, fy25Actual: 30200, fy26Dept: 30000, fy26Admin: 30200, change: 0, changePct: "0.00%" },
+      { item: "Accountant", fy24: 44800, fy25: 45470, fy25Actual: 43770, fy26Dept: 45229, fy26Admin: 44249, change: 479, changePct: "1.10%" },
+      { item: "Assessor", fy24: 83775, fy25: 95275, fy25Actual: 87275, fy26Dept: 91655, fy26Admin: 88775, change: 1500, changePct: "1.72%" },
+      { item: "Treasurer Collector", fy24: 126674, fy25: 141098, fy25Actual: 128398, fy26Dept: 134772, fy26Admin: 131071, change: 2673, changePct: "2.08%" },
+      { item: "Information Technology", fy24: 76000, fy25: 86000, fy25Actual: 84000, fy26Dept: 91000, fy26Admin: 91000, change: 7000, changePct: "8.33%" }
     ]
   };
 
   const departments = Object.keys(budgetData);
 
   const formatCurrency = (num) => {
-    if (!num) return '$0';
-    return new Intl.NumberFormat('en-US', {
-      style: 'currency',
-      currency: 'USD'
-    }).format(num);
-  };
-
-  const getDepartmentTotal = (dept) => {
-    return budgetData[dept].reduce((acc, item) => acc + item.fy26, 0);
+    return new Intl.NumberFormat('en-US', { style: 'currency', currency: 'USD' }).format(num);
   };
 
   return (
     <div className="min-h-screen bg-gray-50">
-      {/* Header */}
       <header className="bg-green-700 text-white p-4 shadow-md">
         <div className="container mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold">Hubbardston Budget Proposal FY26</h1>
-          <button 
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="md:hidden"
-          >
+          <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="md:hidden">
             <Menu size={24} />
           </button>
         </div>
       </header>
-
       <div className="container mx-auto px-4 py-8">
         <div className="flex flex-col md:flex-row gap-6">
-          {/* Navigation Sidebar */}
           <nav className={`md:w-64 ${mobileMenuOpen ? 'block' : 'hidden'} md:block`}>
             <div className="bg-white rounded-lg shadow-md p-4">
               <h2 className="text-lg font-semibold mb-4 text-green-700">Departments</h2>
               <ul className="space-y-2">
                 {departments.map((dept) => (
                   <li key={dept}>
-                    <button
-                      onClick={() => setActiveDept(dept)}
-                      className={`w-full text-left px-4 py-2 rounded-md transition-colors ${
-                        activeDept === dept
-                          ? 'bg-green-100 text-green-700 font-medium'
-                          : 'hover:bg-gray-100'
-                      }`}
-                    >
-                      <div className="flex justify-between items-center">
-                        <span>{dept}</span>
-                        <span className="text-sm text-gray-600">
-                          {formatCurrency(getDepartmentTotal(dept))}
-                        </span>
-                      </div>
+                    <button onClick={() => setActiveDept(dept)} className="w-full text-left px-4 py-2 rounded-md hover:bg-gray-100">
+                      {dept}
                     </button>
                   </li>
                 ))}
               </ul>
             </div>
           </nav>
-
-          {/* Main Content */}
           <main className="flex-1">
             <Card>
-              <CardHeader className="flex flex-row justify-between items-center">
-                <CardTitle className="text-xl text-green-700">{activeDept}</CardTitle>
-                <div className="text-right">
-                  <div className="text-sm text-gray-600">FY26 Total</div>
-                  <div className="text-lg font-semibold">
-                    {formatCurrency(getDepartmentTotal(activeDept))}
-                  </div>
-                </div>
+              <CardHeader>
+                <CardTitle>{activeDept}</CardTitle>
               </CardHeader>
               <CardContent>
-                <div className="overflow-x-auto">
-                  <table className="w-full">
-                    <thead>
-                      <tr className="border-b">
-                        <th className="text-left p-4">Item</th>
-                        <th className="text-right p-4">FY25 Requested</th>
-                        <th className="text-right p-4">FY26 Admin</th>
-                        <th className="text-right p-4">Change (%)</th>
+                <table className="w-full border">
+                  <thead>
+                    <tr>
+                      <th className="text-left p-4">Item</th>
+                      <th className="text-right p-4">FY24 Actual</th>
+                      <th className="text-right p-4">FY25 Requested</th>
+                      <th className="text-right p-4">FY25 Actual</th>
+                      <th className="text-right p-4">FY26 Dept</th>
+                      <th className="text-right p-4">FY26 Admin</th>
+                      <th className="text-right p-4">Change ($)</th>
+                      <th className="text-right p-4">Change (%)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {budgetData[activeDept].map((item, index) => (
+                      <tr key={index} className="border-b hover:bg-gray-50">
+                        <td className="p-4">{item.item}</td>
+                        <td className="text-right p-4">{formatCurrency(item.fy24)}</td>
+                        <td className="text-right p-4">{formatCurrency(item.fy25)}</td>
+                        <td className="text-right p-4">{formatCurrency(item.fy25Actual)}</td>
+                        <td className="text-right p-4">{formatCurrency(item.fy26Dept)}</td>
+                        <td className="text-right p-4">{formatCurrency(item.fy26Admin)}</td>
+                        <td className="text-right p-4">{formatCurrency(item.change)}</td>
+                        <td className="text-right p-4">{item.changePct}</td>
                       </tr>
-                    </thead>
-                    <tbody>
-                      {budgetData[activeDept].map((item, index) => (
-                        <tr key={index} className="border-b hover:bg-gray-50">
-                          <td className="p-4">{item.item}</td>
-                          <td className="text-right p-4">{formatCurrency(item.fy25)}</td>
-                          <td className="text-right p-4">{formatCurrency(item.fy26)}</td>
-                          <td className="text-right p-4">
-                            <span className={item.change > 0 ? 'text-red-600' : 'text-green-600'}>
-                              {item.change > 0 ? '+' : ''}{item.change}%
-                            </span>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
+                    ))}
+                  </tbody>
+                </table>
               </CardContent>
             </Card>
           </main>
