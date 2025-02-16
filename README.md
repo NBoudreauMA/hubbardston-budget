@@ -19,11 +19,14 @@
     </table>
 
     <script>
-        const CSV_URL = "https://raw.githubusercontent.com/NBoudreauMA/hubbardston-budget/main/CURRENT%20-%20FY26%20Working%20Budget%20(1)(Expenditures%20By%20Category).csv";
+        const CSV_URL = "https://raw.githubusercontent.com/NBoudreauMA/hubbardston-budget/refs/heads/main/BUDGET_1";
         
         async function fetchCSV() {
             try {
                 const response = await fetch(CSV_URL);
+                if (!response.ok) {
+                    throw new Error("Failed to fetch CSV file.");
+                }
                 const text = await response.text();
                 const rows = text.split("\n").map(row => row.split(","));
                 
@@ -35,6 +38,7 @@
                 }
             } catch (error) {
                 console.error("Error fetching CSV:", error);
+                document.body.innerHTML += `<p style='color:red;'>Failed to load CSV file. Please check the URL.</p>`;
             }
         }
         
