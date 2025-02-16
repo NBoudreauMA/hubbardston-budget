@@ -4,7 +4,7 @@ import { Table, TableHead, TableRow, TableCell, TableBody } from "@/components/u
 import { Button } from "@/components/ui/button";
 import Papa from "papaparse";
 
-const CSV_URL = "https://raw.githubusercontent.com/NBoudreauMA/hubbardston-budget/refs/heads/main/CURRENT%20-%20FY26%20Working%20Budget%20(1)(Expenditures%20By%20Category).csv";
+const CSV_URL = "https://raw.githubusercontent.com/NBoudreauMA/hubbardston-budget/main/CURRENT%20-%20FY26%20Working%20Budget%20(1)(Expenditures%20By%20Category).csv";
 
 const App = () => {
   const [data, setData] = useState([]);
@@ -24,23 +24,25 @@ const App = () => {
               let cleanedRow = {};
               Object.keys(row).forEach(key => {
                 const trimmedKey = key.trim();
-                if (trimmedKey && trimmedKey !== "") {
+                if (trimmedKey) {
                   cleanedRow[trimmedKey] = row[key]?.toString().trim() || "-";
                 }
               });
               return cleanedRow;
-            }).filter(row => Object.keys(row).length > 1);
+            }).filter(row => Object.values(row).some(value => value !== ""));
             
-            const validHeaders = Object.keys(cleanData[0] || {}).filter(header => header && !header.startsWith("_"));
-            setHeaders(validHeaders);
-            
-            setData(cleanData.map(row => {
-              let filteredRow = {};
-              validHeaders.forEach(header => {
-                filteredRow[header] = row.hasOwnProperty(header) ? row[header] : "-";
-              });
-              return filteredRow;
-            }));
+            if (cleanData.length > 0) {
+              const validHeaders = Object.keys(cleanData[0]).filter(header => header);
+              setHeaders(validHeaders);
+              setData(
+                cleanData.map(row =>
+                  validHeaders.reduce((acc, header) => {
+                    acc[header] = row[header] || "-";
+                    return acc;
+                  }, {})
+                )
+              );
+            }
           },
         });
       })
@@ -65,7 +67,7 @@ const App = () => {
                 {data.map((row, rowIndex) => (
                   <TableRow key={rowIndex}>
                     {headers.map((header, cellIndex) => (
-                      <TableCell key={cellIndex}>{row[header] || "-"}</TableCell>
+                      <TableCell key={cellIndex}>{row[header]}</TableCell>
                     ))}
                   </TableRow>
                 ))}
