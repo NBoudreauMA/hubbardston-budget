@@ -1,109 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Budget Proposal</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-        }
-        header {
-            background-color: #1a4d2e;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            border-bottom: 5px solid #e6b800;
-            position: fixed;
-            width: 100%;
-            top: 0;
-            left: 0;
-            z-index: 1000;
-        }
-        nav {
-            position: fixed;
-            top: 80px;
-            width: 100%;
-            background-color: #f4f4f4;
-            padding: 10px 0;
-            text-align: center;
-            z-index: 999;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-            padding: 5px 10px;
-            transition: background 0.3s;
-        }
-        nav a:hover {
-            background-color: #ddd;
-            border-radius: 5px;
-        }
-        main {
-            margin-top: 120px;
-            padding: 20px;
-        }
-        .collapsible {
-            background-color: #e6b800;
-            color: white;
-            cursor: pointer;
-            padding: 10px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 18px;
-        }
-        .content {
-            display: block;
-            padding: 10px;
-            border: 1px solid #ddd;
-            margin-top: 5px;
-        }
-        .table-container {
-            width: 100%;
-            overflow-x: auto;
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: left;
-        }
-        th {
-            background-color: #f4f4f4;
-            font-weight: bold;
-            text-align: center;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        td:nth-child(n+4) {
-            text-align: center;
-        }
-    </style>
-    <script>
-        function toggleContent(id) {
-            var content = document.getElementById(id);
-            if (content.style.display === "block") {
-                content.style.display = "none";
-            } else {
-                content.style.display = "block";
-            }
-        }
-        
-        document.addEventListener("DOMContentLoaded", function () {
-            document.getElementById('general-government').style.display = "block";
-        });
-    </script>
-</head>
 <body>
     <header>
         <h1>Town of Hubbardston</h1>
@@ -112,67 +6,58 @@
     </header>
     
     <nav>
-<div id="public-safety" class="content">
-    <h2>Public Safety</h2>
-    <div class="table-container" style="overflow-x:auto; position:relative;">
-        <table>
-            <thead>
-                <tr>
-                    <th style="position:sticky; top:0; background:white;">Department</th>
-                    <th style="position:sticky; top:0; background:white;">Category</th>
-                    <th style="position:sticky; top:0; background:white;">Description</th>
-                    <th style="position:sticky; top:0; background:white;">FY22</th>
-                    <th style="position:sticky; top:0; background:white;">FY23</th>
-                    <th style="position:sticky; top:0; background:white;">FY24</th>
-                    <th style="position:sticky; top:0; background:white;">FY25</th>
-                    <th style="position:sticky; top:0; background:white;">FY26</th>
-                    <th style="position:sticky; top:0; background:white;">Change</th>
-                    <th style="position:sticky; top:0; background:white;">% Change</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Police - 210</td><td>Personnel</td><td>Police Chief Salary</td><td>$96,500</td><td>$98,430</td><td>$98,430</td><td>$101,383</td><td>$101,383</td><td>$2,953</td><td>3.00%</td></tr>
-                <tr><td></td><td>Personnel</td><td>Police Wages</td><td>$525,636</td><td>$536,739</td><td>$505,000</td><td>$511,345</td><td>$510,050</td><td>$5,050</td><td>1.00%</td></tr>
-                <tr><td></td><td>Personnel</td><td>Police Assistant</td><td>$16,699</td><td>$21,026</td><td>$21,026</td><td>$21,026</td><td>$21,423</td><td>$397</td><td>1.89%</td></tr>
-                <tr><td></td><td>Employee Support</td><td>Police Training Expense</td><td>$2,000</td><td>$2,000</td><td>$2,000</td><td>$2,000</td><td>$2,000</td><td>$0</td><td>0.00%</td></tr>
-                <tr><td>Fire - 220</td><td>Personnel</td><td>Fire Chief Salary</td><td>$91,694</td><td>$94,680</td><td>$93,528</td><td>$96,334</td><td>$96,334</td><td>$2,806</td><td>3.00%</td></tr>
-                <tr><td></td><td>Personnel</td><td>Fire Wages</td><td>$302,993</td><td>$311,118</td><td>$311,118</td><td>$308,656</td><td>$311,118</td><td>$0</td><td>0.00%</td></tr>
-                <tr><td></td><td>Services</td><td>Vehicle Maintenance</td><td>$21,000</td><td>$21,000</td><td>$15,000</td><td>$17,000</td><td>$17,000</td><td>$2,000</td><td>13.33%</td></tr>
-            </tbody>
-        </table>
-    </div>
-</div>
+        <!-- Navigation Links Go Here -->
+    </nav>
 
-<div id="general-government" class="content">
-    <h2>General Government</h2>
-    <div class="table-container" style="overflow-x:auto; position:relative;">
-        <table>
-            <thead>
-                <tr>
-                    <th style="position:sticky; top:0; background:white;">Department</th>
-                    <th style="position:sticky; top:0; background:white;">Category</th>
-                    <th style="position:sticky; top:0; background:white;">Description</th>
-                    <th style="position:sticky; top:0; background:white;">FY22</th>
-                    <th style="position:sticky; top:0; background:white;">FY23</th>
-                    <th style="position:sticky; top:0; background:white;">FY24</th>
-                    <th style="position:sticky; top:0; background:white;">FY25</th>
-                    <th style="position:sticky; top:0; background:white;">FY26</th>
-                    <th style="position:sticky; top:0; background:white;">Change</th>
-                    <th style="position:sticky; top:0; background:white;">% Change</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr><td>Moderator - 114</td><td>Personnel</td><td>Stipend</td><td>$100</td><td>$100</td><td>$100</td><td>$100</td><td>$100</td><td>$0</td><td>0.00%</td></tr>
-                <tr><td>Select Board - 122</td><td>Personnel</td><td>Executive Assistant</td><td>$28,111</td><td>$28,673</td><td>$28,673</td><td>$36,870</td><td>$34,348</td><td>$5,675</td><td>19.79%</td></tr>
-                <tr><td></td><td>Services</td><td>Legal</td><td>$40,000</td><td>$40,000</td><td>$40,000</td><td>$40,000</td><td>$40,000</td><td>$0</td><td>0.00%</td></tr>
-                <tr><td>Town Admin - 129</td><td>Personnel</td><td>Salary</td><td>$110,000</td><td>$112,200</td><td>$112,200</td><td>$112,200</td><td>$115,566</td><td>$3,366</td><td>3.00%</td></tr>
-            </tbody>
-        </table>
-    </div>
-</div>
+    <main>
+        <div id="public-safety" class="content">
+            <h2>Public Safety</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="position:sticky; top:0; background:white;">Department</th>
+                            <th style="position:sticky; top:0; background:white;">Category</th>
+                            <th style="position:sticky; top:0; background:white;">Description</th>
+                            <th style="position:sticky; top:0; background:white;">FY22</th>
+                            <th style="position:sticky; top:0; background:white;">FY23</th>
+                            <th style="position:sticky; top:0; background:white;">FY24</th>
+                            <th style="position:sticky; top:0; background:white;">FY25</th>
+                            <th style="position:sticky; top:0; background:white;">FY26</th>
+                            <th style="position:sticky; top:0; background:white;">Change</th>
+                            <th style="position:sticky; top:0; background:white;">% Change</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Police - 210</td><td>Personnel</td><td>Police Chief Salary</td><td>$96,500</td><td>$98,430</td><td>$98,430</td><td>$101,383</td><td>$101,383</td><td>$2,953</td><td>3.00%</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
 
-
+        <div id="general-government" class="content">
+            <h2>General Government</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="position:sticky; top:0; background:white;">Department</th>
+                            <th style="position:sticky; top:0; background:white;">Category</th>
+                            <th style="position:sticky; top:0; background:white;">Description</th>
+                            <th style="position:sticky; top:0; background:white;">FY22</th>
+                            <th style="position:sticky; top:0; background:white;">FY23</th>
+                            <th style="position:sticky; top:0; background:white;">FY24</th>
+                            <th style="position:sticky; top:0; background:white;">FY25</th>
+                            <th style="position:sticky; top:0; background:white;">FY26</th>
+                            <th style="position:sticky; top:0; background:white;">Change</th>
+                            <th style="position:sticky; top:0; background:white;">% Change</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Moderator - 114</td><td>Personnel</td><td>Stipend</td><td>$100</td><td>$100</td><td>$100</td><td>$100</td><td>$100</td><td>$0</td><td>0.00%</td></tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </main>
 </body>
-</html>
