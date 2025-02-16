@@ -1,43 +1,131 @@
 # Hubbardston Budget - General Government
 
-| Category | Subcategory | Description | FY24 Actual | FY25 Requested | FY25 Actual | FY26 Dept | FY26 Admin | Change ($) | Change (%) |
-|----------|------------|-------------|------------:|--------------:|------------:|----------:|----------:|-----------:|-----------:|
-| **Moderator - 114** | **Personnel** | Stipend | $100 | $100 | $100 | $100 | $100 | $0 | 0.00% |
-| | | **TOTAL** | **$100** | **$100** | **$100** | **$100** | **$100** | **$0** | **0.00%** |
-| **Select Board - 122** | **Personnel** | Executive Assistant | $28,111 | $28,673 | $28,673 | $36,870 | $34,348 | $5,675 | 19.79% |
-| | **Employee Support** | Expenses | $800 | $800 | $800 | $800 | $800 | $0 | 0.00% |
-| | **Services** | Binding of Records | $250 | $0 | $0 | $0 | $0 | $0 | 0.00% |
-| | | Advertising | $1,500 | $1,500 | $1,500 | $1,500 | $1,000 | -$500 | -33.33% |
-| | | Legal | $40,000 | $40,000 | $40,000 | $40,000 | $40,000 | $0 | 0.00% |
-| | **Supplies** | Postage | $1,000 | $1,000 | $1,000 | $1,000 | $6,000 | $5,000 | 500.00% |
-| | | Office Supplies | $2,500 | $2,500 | $2,500 | $2,500 | $2,500 | $0 | 0.00% |
-| | | Town Report | $500 | $500 | $500 | $500 | $500 | $0 | 0.00% |
-| | | Memorial Day | $1,500 | $1,500 | $1,500 | $3,000 | $1,500 | $0 | 0.00% |
-| | | **TOTAL** | **$77,161** | **$76,473** | **$76,473** | **$86,170** | **$86,648** | **$10,175** | **13.31%** |
-| **Town Admin - 129** | **Personnel** | Salary | $110,000 | $112,200 | $112,200 | $112,200 | $115,566 | $3,366 | 3.00% |
-| | **Employee Support** | Cell Phone Stipend | $600 | $600 | $600 | $600 | $600 | $0 | 0.00% |
-| | | Expenses | $6,600 | $7,600 | $6,600 | $8,000 | $6,600 | $0 | 0.00% |
-| | | **TOTAL** | **$121,253** | **$120,400** | **$119,400** | **$120,800** | **$122,766** | **$3,366** | **2.82%** |
-| **Finance Committee - 131** | **Employee Support** | FC Expenses | $200 | $200 | $200 | $200 | $200 | $0 | 0.00% |
-| | **Other** | FC Reserve Fund | $30,000 | $30,000 | $30,000 | $30,000 | $30,000 | $0 | 0.00% |
-| | | **TOTAL** | **$30,200** | **$30,200** | **$30,200** | **$30,000** | **$30,200** | **$0** | **0.00%** |
-| **Accountant - 135** | **Services** | Accountant Services | $23,500 | $23,970 | $23,970 | $24,929 | $24,449 | $479 | 2.00% |
-| | | Annual Audit | $19,500 | $19,500 | $19,500 | $19,500 | $19,500 | $0 | 0.00% |
-| | **Supplies** | Accountant Expense | $300 | $500 | $300 | $800 | $300 | $0 | 0.00% |
-| | **Employee Support** | Travel | $1,500 | $1,500 | $0 | $0 | $0 | $0 | 0.00% |
-| | | **TOTAL** | **$44,800** | **$45,470** | **$43,770** | **$45,229** | **$44,249** | **$479** | **1.10%** |
-| **Assessor - 141** | **Employee Support** | Expenses (Dues) | $275 | $275 | $275 | $275 | $275 | $0 | 0.00% |
-| | **Services** | Assessing Services | $73,500 | $75,000 | $75,000 | $79,380 | $76,500 | $1,500 | 2.00% |
-| | | Assistant | $10,000 | $20,000 | $12,000 | $12,000 | $12,000 | $0 | 0.00% |
-| | | **TOTAL** | **$83,775** | **$95,275** | **$87,275** | **$91,655** | **$88,775** | **$1,500** | **1.72%** |
-| **Treasurer Collector - 149** | **Personnel** | Salary | $65,000 | $66,300 | $66,300 | $68,952 | $70,112 | $3,812 | 5.75% |
-| | | Certification | $1,000 | $1,000 | $1,000 | $1,000 | $1,000 | $0 | 0.00% |
-| | **Employee Support** | Dues & Workshops | $870 | $13,000 | $1,300 | $1,300 | $1,300 | $0 | 0.00% |
-| | **Services** | Payroll Services | $3,500 | $3,500 | $3,500 | $4,500 | $3,500 | $0 | 0.00% |
-| | **Supplies** | Postage & Supplies | $7,300 | $7,450 | $7,450 | $7,450 | $5,450 | -$2,000 | -26.85% |
-| | | **TOTAL** | **$126,674** | **$141,098** | **$128,398** | **$134,772** | **$131,071** | **$2,673** | **2.08%** |
-| **Information Technology - 155** | **Services** | IT Maintenance | $70,000 | $80,000 | $78,000 | $85,000 | $85,000 | $7,000 | 8.97% |
-| | | Copier | $3,000 | $3,000 | $3,000 | $3,000 | $3,000 | $0 | 0.00% |
-| | | Website | $3,000 | $3,000 | $3,000 | $3,000 | $3,000 | $0 | 0.00% |
-| | | **TOTAL** | **$76,000** | **$86,000** | **$84,000** | **$91,000** | **$91,000** | **$7,000** | **8.33%** |
-| **GRAND TOTAL (General Government)** | | | **$669,598** | **$718,106** | **$688,408** | **$742,797** | **$731,340** | **$42,932** | **6.24%** |
+## Navigation
+[Moderator](#moderator---114) | [Select Board](#select-board---122) | [Town Administrator](#town-admin---129) | [Finance Committee](#finance-committee---131) | [Accountant](#accountant---135) | [Assessor](#assessor---141) | [Treasurer/Collector](#treasurer-collector---149) | [Information Technology](#information-technology---155) | [Grand Total](#grand-total-general-government)
+
+---
+
+## Moderator - 114
+**Personnel**  
+- Stipend: $100
+
+[Back to Top](#navigation)
+
+---
+
+## Select Board - 122
+**Personnel**  
+- Executive Assistant: $28,111 → $34,348
+
+**Employee Support**  
+- Expenses: $800
+
+**Services**  
+- Binding of Records: $250 → $0  
+- Advertising: $1,500 → $1,000  
+- Legal: $40,000
+
+**Supplies**  
+- Postage: $1,000 → $6,000  
+- Office Supplies: $2,500  
+- Town Report: $500  
+- Memorial Day: $1,500 → $3,000  
+
+**Total**: **$86,648 (▲13.31%)**
+
+[Back to Top](#navigation)
+
+---
+
+## Town Admin - 129
+**Personnel**  
+- Salary: $115,566
+
+**Employee Support**  
+- Cell Phone Stipend: $600  
+- Expenses: $6,600 → $8,000  
+
+**Total**: **$122,766 (▲2.82%)**
+
+[Back to Top](#navigation)
+
+---
+
+## Finance Committee - 131
+**Employee Support**  
+- FC Expenses: $200  
+
+**Other**  
+- FC Reserve Fund: $30,000  
+
+**Total**: **$30,200 (0.00%)**
+
+[Back to Top](#navigation)
+
+---
+
+## Accountant - 135
+**Services**  
+- Accountant Services: $24,449 (▲2.00%)  
+- Annual Audit: $19,500  
+
+**Supplies**  
+- Accountant Expense: $300 → $800  
+
+**Total**: **$44,249 (▲1.10%)**
+
+[Back to Top](#navigation)
+
+---
+
+## Assessor - 141
+**Employee Support**  
+- Expenses (Dues): $275  
+
+**Services**  
+- Assessing Services: $76,500 (▲2.00%)  
+- Assistant: $12,000  
+
+**Total**: **$88,775 (▲1.72%)**
+
+[Back to Top](#navigation)
+
+---
+
+## Treasurer Collector - 149
+**Personnel**  
+- Salary: $70,112 (▲5.75%)  
+- Certification: $1,000  
+- Assistant Treasurer Collector: $43,909 (▲2.00%)  
+
+**Employee Support**  
+- Dues & Workshops: $1,300  
+
+**Services**  
+- Payroll Services: $3,500  
+
+**Supplies**  
+- Postage & Supplies: $5,450 (▼26.85%)  
+
+**Total**: **$131,071 (▲2.08%)**
+
+[Back to Top](#navigation)
+
+---
+
+## Information Technology - 155
+**Services**  
+- IT Maintenance: $85,000 (▲8.97%)  
+- Copier: $3,000  
+- Website: $3,000  
+
+**Total**: **$91,000 (▲8.33%)**
+
+[Back to Top](#navigation)
+
+---
+
+## Grand Total (General Government)
+**$731,340 (▲6.24%)**
+
+[Back to Top](#navigation)
