@@ -35,6 +35,12 @@
             text-decoration: none;
             color: #333;
             font-weight: bold;
+            padding: 5px 10px;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            border-radius: 5px;
         }
         main {
             margin-top: 120px;
@@ -57,6 +63,10 @@
             border: 1px solid #ddd;
             margin-top: 5px;
         }
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
         table {
             width: 100%;
             border-collapse: collapse;
@@ -64,11 +74,19 @@
         }
         th, td {
             border: 1px solid #ddd;
-            padding: 8px;
+            padding: 10px;
             text-align: left;
         }
         th {
             background-color: #f4f4f4;
+            font-weight: bold;
+            text-align: center;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+        td:nth-child(n+4) {
+            text-align: center;
         }
     </style>
     <script>
@@ -81,7 +99,6 @@
             }
         }
         
-        // Ensure the section is visible on page load
         document.addEventListener("DOMContentLoaded", function () {
             document.getElementById('general-government').style.display = "block";
         });
@@ -102,29 +119,31 @@
     <main>
         <button class="collapsible" onclick="toggleContent('general-government')">General Government</button>
         <div id="general-government" class="content">
-            <table>
-                <tr>
-                    <th>Department</th>
-                    <th>Category</th>
-                    <th>Description</th>
-                    <th>FY22</th>
-                    <th>FY23</th>
-                    <th>FY24</th>
-                    <th>FY25</th>
-                    <th>FY26</th>
-                    <th>Change</th>
-                    <th>% Change</th>
-                </tr>
-                <tr><td>Moderator - 114</td><td>Personnel</td><td>Stipend</td><td>$100</td><td>$100</td><td>$100</td><td>$100</td><td>$100</td><td>$0</td><td>0.00%</td></tr>
-                <tr><td>Select Board - 122</td><td>Personnel</td><td>Executive Assistant</td><td>$28,111</td><td>$28,673</td><td>$28,673</td><td>$36,870</td><td>$34,348</td><td>$5,675</td><td>19.79%</td></tr>
-                <tr><td></td><td>Employee Support</td><td>Expenses</td><td>$800</td><td>$800</td><td>$800</td><td>$800</td><td>$800</td><td>$0</td><td>0.00%</td></tr>
-                <tr><td></td><td>Services</td><td>Legal</td><td>$40,000</td><td>$40,000</td><td>$40,000</td><td>$40,000</td><td>$40,000</td><td>$0</td><td>0.00%</td></tr>
-                <tr><td>Town Admin - 129</td><td>Personnel</td><td>Salary</td><td>$110,000</td><td>$112,200</td><td>$112,200</td><td>$112,200</td><td>$115,566</td><td>$3,366</td><td>3.00%</td></tr>
-                <tr><td>Finance Committee - 131</td><td>Employee Support</td><td>FC Expenses</td><td>$200</td><td>$200</td><td>$200</td><td>$200</td><td>$200</td><td>$0</td><td>0.00%</td></tr>
-                <tr><td>Accountant - 135</td><td>Services</td><td>Accountant Services</td><td>$23,500</td><td>$23,970</td><td>$23,970</td><td>$24,929</td><td>$24,449</td><td>$479</td><td>2.00%</td></tr>
-                <tr><td>Information Technology - 155</td><td>Services</td><td>IT Maintenance</td><td>$70,000</td><td>$80,000</td><td>$78,000</td><td>$85,000</td><td>$85,000</td><td>$7,000</td><td>8.97%</td></tr>
-                <tr><td>Town Clerk - 161</td><td>Personnel</td><td>Town Clerk Salary</td><td>$47,500</td><td>$60,000</td><td>$55,500</td><td>$57,720</td><td>$57,720</td><td>$2,220</td><td>4.00%</td></tr>
-            </table>
+            <div class="table-container">
+                <table>
+                    <tr>
+                        <th>Department</th>
+                        <th>Category</th>
+                        <th>Description</th>
+                        <th>FY22</th>
+                        <th>FY23</th>
+                        <th>FY24</th>
+                        <th>FY25</th>
+                        <th>FY26</th>
+                        <th>Change</th>
+                        <th>% Change</th>
+                    </tr>
+                    <tr><td>Moderator - 114</td><td>Personnel</td><td>Stipend</td><td>$100</td><td>$100</td><td>$100</td><td>$100</td><td>$100</td><td>$0</td><td>0.00%</td></tr>
+                    <tr><td>Select Board - 122</td><td>Personnel</td><td>Executive Assistant</td><td>$28,111</td><td>$28,673</td><td>$28,673</td><td>$36,870</td><td>$34,348</td><td>$5,675</td><td>19.79%</td></tr>
+                    <tr><td></td><td>Employee Support</td><td>Expenses</td><td>$800</td><td>$800</td><td>$800</td><td>$800</td><td>$800</td><td>$0</td><td>0.00%</td></tr>
+                    <tr><td></td><td>Services</td><td>Legal</td><td>$40,000</td><td>$40,000</td><td>$40,000</td><td>$40,000</td><td>$40,000</td><td>$0</td><td>0.00%</td></tr>
+                    <tr><td>Town Admin - 129</td><td>Personnel</td><td>Salary</td><td>$110,000</td><td>$112,200</td><td>$112,200</td><td>$112,200</td><td>$115,566</td><td>$3,366</td><td>3.00%</td></tr>
+                    <tr><td>Finance Committee - 131</td><td>Employee Support</td><td>FC Expenses</td><td>$200</td><td>$200</td><td>$200</td><td>$200</td><td>$200</td><td>$0</td><td>0.00%</td></tr>
+                    <tr><td>Accountant - 135</td><td>Services</td><td>Accountant Services</td><td>$23,500</td><td>$23,970</td><td>$23,970</td><td>$24,929</td><td>$24,449</td><td>$479</td><td>2.00%</td></tr>
+                    <tr><td>Information Technology - 155</td><td>Services</td><td>IT Maintenance</td><td>$70,000</td><td>$80,000</td><td>$78,000</td><td>$85,000</td><td>$85,000</td><td>$7,000</td><td>8.97%</td></tr>
+                    <tr><td>Town Clerk - 161</td><td>Personnel</td><td>Town Clerk Salary</td><td>$47,500</td><td>$60,000</td><td>$55,500</td><td>$57,720</td><td>$57,720</td><td>$2,220</td><td>4.00%</td></tr>
+                </table>
+            </div>
         </div>
     </main>
 </body>
