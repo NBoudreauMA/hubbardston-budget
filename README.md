@@ -1,69 +1,103 @@
-# ![Hubbardston Seal](https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Seal_of_Massachusetts.svg/1920px-Seal_of_Massachusetts.svg.png)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hubbardston FY26 Budget - General Government</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            border-bottom: 2px solid #0055A4;
+            padding-bottom: 5px;
+        }
+        .table-container {
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background: #0055A4;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hubbardston FY26 Budget - General Government</h1>
+    </header>
+    
+    <div class="container">
+        <h2>General Government</h2>
+        <div class="table-container">
+            <table id="budget-table">
+                <thead>
+                    <tr>
+                        <th>Department</th>
+                        <th>Category</th>
+                        <th>FY24 Actual</th>
+                        <th>FY25 Requested</th>
+                        <th>FY25 Actual</th>
+                        <th>FY26 Dept</th>
+                        <th>FY26 Admin</th>
+                        <th>Change ($)</th>
+                        <th>Change (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
 
-# **Hubbardston Budget - General Government**
-*A transparent and structured financial overview for FY24–FY26*
-
----
-
-## 📌 Quick Navigation  
-<table align="center">
-<tr>
-    <td align="center"><a href="#moderator-114"><img src="https://img.icons8.com/ios-filled/50/gavel.png" width="50"><br>Moderator</a></td>
-    <td align="center"><a href="#select-board-122"><img src="https://img.icons8.com/ios-filled/50/law.png" width="50"><br>Select Board</a></td>
-    <td align="center"><a href="#town-admin-129"><img src="https://img.icons8.com/ios-filled/50/admin-settings-male.png" width="50"><br>Town Admin</a></td>
-    <td align="center"><a href="#finance-committee-131"><img src="https://img.icons8.com/ios-filled/50/money.png" width="50"><br>Finance</a></td>
-</tr>
-<tr>
-    <td align="center"><a href="#accountant-135"><img src="https://img.icons8.com/ios-filled/50/calculator.png" width="50"><br>Accountant</a></td>
-    <td align="center"><a href="#assessor-141"><img src="https://img.icons8.com/ios-filled/50/home.png" width="50"><br>Assessor</a></td>
-    <td align="center"><a href="#treasurer-collector-149"><img src="https://img.icons8.com/ios-filled/50/bank.png" width="50"><br>Treasurer</a></td>
-    <td align="center"><a href="#information-technology-155"><img src="https://img.icons8.com/ios-filled/50/computer.png" width="50"><br>IT</a></td>
-</tr>
-<tr>
-    <td align="center"><a href="#town-clerk-161"><img src="https://img.icons8.com/ios-filled/50/documents.png" width="50"><br>Town Clerk</a></td>
-    <td align="center"><a href="#building-maintenance-192"><img src="https://img.icons8.com/ios-filled/50/maintenance.png" width="50"><br>Building</a></td>
-    <td align="center"><a href="#grand-total"><img src="https://img.icons8.com/ios-filled/50/sigma.png" width="50"><br>Grand Total</a></td>
-</tr>
-</table>
-
----
-
-## 🏛 Moderator - 114 <a id="moderator-114"></a>
-| Category  | Description | FY24 Actual | FY25 Requested | FY25 Actual | FY26 Dept | FY26 Admin | Change ($) | Change (%) |
-|-----------|------------|-------------|---------------|-------------|-----------|------------|------------|------------|
-| **Personnel** | Stipend | $100 | $100 | $100 | $100 | $100 | $0 | 0.00% |
-| **Total** |  | **$100** | **$100** | **$100** | **$100** | **$100** | **$0** | **0.00%** |
-
-[🔝 Back to Top](#-quick-navigation)
-
----
-
-## 📜 Select Board - 122 <a id="select-board-122"></a>
-| Category  | Description | FY24 Actual | FY25 Requested | FY25 Actual | FY26 Dept | FY26 Admin | Change ($) | Change (%) |
-|-----------|------------|-------------|---------------|-------------|-----------|------------|------------|------------|
-| **Personnel** | Executive Assistant | $28,111 | $28,673 | $28,673 | <span style="color:green">$36,870</span> | <span style="color:blue">$34,348</span> | <span style="color:red">$5,675</span> | <span style="color:orange">19.79%</span> |
-| **Services** | Advertising | $1,500 | $1,500 | $1,500 | $1,500 | <span style="color:red">$1,000</span> | <span style="color:red">-$500</span> | <span style="color:red">-33.33%</span> |
-| **Services** | Legal | $40,000 | $40,000 | $40,000 | $40,000 | $40,000 | $0 | 0.00% |
-| **Supplies** | Postage | $1,000 | $1,000 | $1,000 | $1,000 | <span style="color:green">$6,000</span> | <span style="color:green">$5,000</span> | <span style="color:green">500.00%</span> |
-| **Total** |  | **$77,161** | **$76,473** | **$76,473** | **$86,170** | **$86,648** | **$10,175** | **13.31%** |
-
-[🔝 Back to Top](#-quick-navigation)
-
----
-
-## 👨‍💼 Town Admin - 129 <a id="town-admin-129"></a>
-| Category  | Description | FY24 Actual | FY25 Requested | FY25 Actual | FY26 Dept | FY26 Admin | Change ($) | Change (%) |
-|-----------|------------|-------------|---------------|-------------|-----------|------------|------------|------------|
-| **Personnel** | Salary | $110,000 | $112,200 | $112,200 | <span style="color:green">$112,200</span> | <span style="color:blue">$115,566</span> | <span style="color:red">$3,366</span> | <span style="color:orange">3.00%</span> |
-| **Total** |  | **$121,253** | **$120,400** | **$119,400** | **$120,800** | **$122,766** | **$3,366** | **2.82%** |
-
-[🔝 Back to Top](#-quick-navigation)
-
----
-
-## 📈 Grand Total (General Government) <a id="grand-total"></a>
-| Category  | FY24 Actual | FY25 Requested | FY25 Actual | FY26 Dept | FY26 Admin | Change ($) | Change (%) |
-|-----------|-------------|---------------|-------------|-----------|------------|------------|------------|
-| **Total Budget** | **$669,598** | **$718,106** | **$688,408** | <span style="color:green">**$742,797**</span> | <span style="color:blue">**$731,340**</span> | <span style="color:red">**$42,932**</span> | <span style="color:orange">**6.24%**</span> |
-
-[🔝 Back to Top](#-quick-navigation)
+    <script>
+        async function loadCSV() {
+            const response = await fetch('https://raw.githubusercontent.com/NBoudreauMA/hubbardston-budget/refs/heads/main/CURRENT%20-%20FY26%20Working%20Budget%20(1)(Expenditures%20By%20Category).csv'); // Replace with the actual CSV URL
+            const data = await response.text();
+            const rows = data.split('\n').slice(1);
+            const tableBody = document.querySelector('#budget-table tbody');
+            
+            rows.forEach(row => {
+                const cols = row.split(',');
+                if (cols.length > 1) {
+                    const tr = document.createElement('tr');
+                    cols.forEach(col => {
+                        const td = document.createElement('td');
+                        td.textContent = col.trim();
+                        tr.appendChild(td);
+                    });
+                    tableBody.appendChild(tr);
+                }
+            });
+        }
+        
+        loadCSV();
+    </script>
+</body>
+</html>
