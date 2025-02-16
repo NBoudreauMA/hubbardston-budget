@@ -15,21 +15,77 @@
             text-align: center;
             padding: 20px;
             border-bottom: 5px solid #e6b800;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
-        h1 {
-            margin: 0;
-            font-size: 2.5em;
+        nav {
+            position: fixed;
+            top: 80px;
+            width: 100%;
+            background-color: #f4f4f4;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 999;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
             font-weight: bold;
         }
-        h2 {
-            margin: 5px 0;
-            font-size: 1.8em;
+        main {
+            margin-top: 120px;
+            padding: 20px;
         }
-        p {
-            font-size: 1.2em;
-            font-style: italic;
+        .collapsible {
+            background-color: #e6b800;
+            color: white;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+        }
+        .content {
+            display: block;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-top: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
         }
     </style>
+    <script>
+        function toggleContent(id) {
+            var content = document.getElementById(id);
+            if (content.style.display === "block") {
+                content.style.display = "none";
+            } else {
+                content.style.display = "block";
+            }
+        }
+        
+        // Ensure the section is visible on page load
+        document.addEventListener("DOMContentLoaded", function () {
+            document.getElementById('general-government').style.display = "block";
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -37,5 +93,39 @@
         <h2>Fiscal Year 2026 Budget Proposal</h2>
         <p>Presented by Nathan Boudreau, Town Administrator</p>
     </header>
+    
+    <nav>
+        <a href="#general-government">General Government</a>
+        <a href="#another-section">Another Section</a>
+    </nav>
+    
+    <main>
+        <button class="collapsible" onclick="toggleContent('general-government')">General Government</button>
+        <div id="general-government" class="content">
+            <table>
+                <tr>
+                    <th>Department</th>
+                    <th>Category</th>
+                    <th>Description</th>
+                    <th>FY22</th>
+                    <th>FY23</th>
+                    <th>FY24</th>
+                    <th>FY25</th>
+                    <th>FY26</th>
+                    <th>Change</th>
+                    <th>% Change</th>
+                </tr>
+                <tr><td>Moderator - 114</td><td>Personnel</td><td>Stipend</td><td>$100</td><td>$100</td><td>$100</td><td>$100</td><td>$100</td><td>$0</td><td>0.00%</td></tr>
+                <tr><td>Select Board - 122</td><td>Personnel</td><td>Executive Assistant</td><td>$28,111</td><td>$28,673</td><td>$28,673</td><td>$36,870</td><td>$34,348</td><td>$5,675</td><td>19.79%</td></tr>
+                <tr><td></td><td>Employee Support</td><td>Expenses</td><td>$800</td><td>$800</td><td>$800</td><td>$800</td><td>$800</td><td>$0</td><td>0.00%</td></tr>
+                <tr><td></td><td>Services</td><td>Legal</td><td>$40,000</td><td>$40,000</td><td>$40,000</td><td>$40,000</td><td>$40,000</td><td>$0</td><td>0.00%</td></tr>
+                <tr><td>Town Admin - 129</td><td>Personnel</td><td>Salary</td><td>$110,000</td><td>$112,200</td><td>$112,200</td><td>$112,200</td><td>$115,566</td><td>$3,366</td><td>3.00%</td></tr>
+                <tr><td>Finance Committee - 131</td><td>Employee Support</td><td>FC Expenses</td><td>$200</td><td>$200</td><td>$200</td><td>$200</td><td>$200</td><td>$0</td><td>0.00%</td></tr>
+                <tr><td>Accountant - 135</td><td>Services</td><td>Accountant Services</td><td>$23,500</td><td>$23,970</td><td>$23,970</td><td>$24,929</td><td>$24,449</td><td>$479</td><td>2.00%</td></tr>
+                <tr><td>Information Technology - 155</td><td>Services</td><td>IT Maintenance</td><td>$70,000</td><td>$80,000</td><td>$78,000</td><td>$85,000</td><td>$85,000</td><td>$7,000</td><td>8.97%</td></tr>
+                <tr><td>Town Clerk - 161</td><td>Personnel</td><td>Town Clerk Salary</td><td>$47,500</td><td>$60,000</td><td>$55,500</td><td>$57,720</td><td>$57,720</td><td>$2,220</td><td>4.00%</td></tr>
+            </table>
+        </div>
+    </main>
 </body>
 </html>
