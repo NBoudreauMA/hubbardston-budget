@@ -19,7 +19,7 @@
     </table>
 
     <script>
-        const CSV_URL = "https://raw.githubusercontent.com/NBoudreauMA/hubbardston-budget/refs/heads/main/BUDGET_1";
+        const CSV_URL = "https://raw.githubusercontent.com/NBoudreauMA/hubbardston-budget/main/BUDGET_1";
         
         async function fetchCSV() {
             try {
